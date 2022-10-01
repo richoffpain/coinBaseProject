@@ -1,0 +1,1060 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  
+ 
+}
+
+body{
+  
+   overflow-x: hidden;
+ 
+}
+
+#container{
+/*  background-color: orange;  */
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    vertical-align: center;
+    height: 20vh;
+}
+.logo{
+ /* background-color: aqua;   */
+    width: 5em;
+    height: 3rem;
+    margin-left: 1em;
+    padding-top: 1vh;
+   /* height: 5em; */
+}
+.logoImage{
+    position: absolute;
+    width: 6rem;
+    height: 3vh;
+    top: .8em;
+  
+}
+#toggle{
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: .5s;
+    padding-right: 10px;
+    width: 3rem;
+    height: 3rem;
+  /*  background-color: blueviolet; */
+    opacity: .8;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+ 
+}
+#toggle::before{
+    content: '';
+    position: absolute;
+    width: 1rem;
+    height: .2rem;
+    background-color: black;
+    transform: translateY(-5px);
+    transition: .2s;
+}
+#toggle::after{
+    content: '';
+    position: absolute;
+    width: 1rem;
+    height: .2rem;
+    background-color: black;
+    transform: translateY(5px);
+    transition: .2s;
+}
+#toggle.active::before{
+    transform: translateY(0px) rotate(45deg);
+    background-color: white;
+}
+#toggle.active::after{
+    transform: translateY(0px) rotate(-45deg);
+    background-color: white;
+}
+#nav{
+    background-color: #0d6efd;
+    width: 15rem;
+    height: 15em;
+    line-height: 2em;
+    padding-top: 4rem;
+    display: none; 
+  
+}
+#nav ul li{
+    list-style-type: none;
+}
+#nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.3em;
+    cursor: pointer;
+}
+#nav.active{
+    transition: .5s;
+    display: flex;
+/*    background-color: white;   */
+    position: absolute;
+    right: 0;
+    width: 60vw;
+    top: 0vh;
+    height: 50vh;
+    z-index: 5;
+    font-weight: bolder;
+ 
+}
+.signin{
+    visibility: hidden;
+}
+.getstarted{
+    position: absolute;
+    visibility: hidden;
+}
+.section1{
+/*    background-color: crimson;   */
+    height: 80vh;
+    width: 90vw;
+    margin-left: 5vw;
+}
+.text-primary{
+    font-weight: bold;
+}
+.icon-btc{
+    width: 1.5rem;
+    height: 1.5rem;
+/*    background-color: aqua;  */
+}
+.home-form > *{
+    margin-bottom: 10px;
+    width: 80vw;
+    margin-left: 5vw;
+}
+.home-cta > *{
+    margin-bottom: 20px;
+}
+.section2{
+    /* 
+   visibility: hidden;
+    width: 0vw;
+    height: 0vh;
+     */
+     display: none;
+     
+}
+.section3{
+   
+    margin-top: 0px;
+    height: 110vw;
+  /*  
+   background-color: rebeccapurple;
+   */
+   
+
+}
+.table{
+    position: absolute;
+    width: 100vw;
+    height: 50vh;
+  /*  background-color: orange; 
+   */
+}
+.nomCrypto > *{
+   vertical-align: center;
+}
+.textCrypto{
+    display: block;
+    margin-left: 40px;
+}
+.cryptoIcon{
+    height: 30px;
+    position: absolute;
+    left: 10px;
+}
+.precioActual{
+    position: absolute;
+    right: 10px;
+}
+.porcentajeActual{
+    display: block;
+    position: absolute;
+    right: 10px;
+    transform: translateY(35px);
+    
+}
+.section4{
+   /* background-color: red;  */
+    width: 100vw;
+    height: 105vh;
+    margin: 0;
+
+}
+.section4 > *{
+  /*  position: absolute;  
+   
+  */
+  width: 70vw;
+  margin-left: 15vw;
+  text-align: center;
+   
+}
+.empieza{
+   /*  background-color: paleturquoise;
+     */
+    height: 50vh;
+}
+.empieza h3{
+    font-size: 1.6rem;
+}
+.empieza button{
+    margin: auto;
+}
+.d-flex{
+    margin-bottom: 20px;
+}
+.section5{
+    width: 70vw;
+    height: 50vh;
+ /*   background-color: burlywood;     */
+    margin-left: 15vw;
+    text-align: center;
+}
+.section6{
+  /*  background-color: cornflowerblue;  */
+    width: 90vw;
+    margin-left: 5vw;
+    height: 130vh;
+    text-align: center;
+}
+.section7{
+    width: 90vw;
+    margin-left: 5vw;
+    height: 180vh;
+    text-align: center;
+   /* background-color: darkblue; */
+
+}
+.sectionazul{
+    height: 55vh;
+    width: 100vw;
+    margin: auto;
+    padding-top: 30px;
+}
+.section8{
+ /*   background-color: darkorchid;  */
+    padding-top: 3rem;
+    width: 90vw;
+    margin-left: 5vw;
+    height: 110vh;
+    text-align: center;
+}
+.mt-4{
+    display: block;
+}
+.sectionmarino{
+    background-color: midnightblue;  
+    opacity: .9;
+    width: 100vw;
+    margin-left: 0vw;
+    height: 60vh;
+    text-align: center;
+}
+.sectionmarinotext{
+    margin:auto;
+    margin-top: 10vh;
+  /*  background-color: orange;  */
+    width: 80vw;
+    line-height: 5vh;
+    text-align: center;
+}
+.sectionfooter{
+   /*  background-color: crimson;  */
+    width: 100vw;
+    height: 150vh;
+}
+
+
+
+
+
+
+
+
+
+
+// X-Small devices (portrait phones, less than 576px)
+@media (min-width: 575.98px) { 
+    body{
+    
+            width: 8em;
+            height: 3rem;
+          
+          
+        }
+        .logoImage{
+           
+            width: 15vw;
+           
+          
+        }
+        #toggle.active::before,
+        #toggle.active::after{
+          
+            background-color: black;
+        }
+        #toggle::before,
+        #toggle::after{
+            
+            width: 1.5rem;
+            
+        }
+        #nav.active{
+            transition: .5s;
+            display: flex;
+        /*    background-color: white;   */
+            position: absolute;
+            right: 0;
+            left: 0;
+            width: 100vw;
+            top: 10vh;
+            height: 50vh;
+            background-color: #0d6efd;
+            line-height: 2em;
+            z-index: 5;
+            font-weight: bolder;
+         
+        }
+        .getstarted{
+        
+           display: block;
+           visibility: visible;
+           position: absolute;
+           transform: translateX(-150px) translateY(-20px);
+           
+         /*   background-color: #0d6efd; */
+            width: 100px;
+            height: 40px;
+            border-radius: .5em;
+            border-color: white;
+        }
+        .section1{
+/*               background-color: crimson;     */
+                height: 80vh;
+                width: 90vw;
+                margin-left: 5vw;
+            }
+            .text-primary{
+                font-weight: bold;
+            }
+            .home-title{
+             
+               /* 
+                  background-color: orange;*/
+                font-size: 3.5rem;
+            }
+            .home-description{
+                font-size: bolder;
+                font-size: 1.4em;
+            }
+            .home-form > *{
+                vertical-align: bottom;
+                margin-left: 5vw;
+                display: inline-block;
+                
+            }
+            .form-control{
+                width: 45vw;
+                height: 10vh;
+            }
+            .btn{
+                width: 25vw;
+                height: 10vh;
+            }
+            .section3{
+              
+                height: 80vw;
+              /*   
+                background-color: rebeccapurple;
+              
+               */
+            }
+          
+            .precioActual,
+            .porcentajeActual{
+              
+                right: 20px;
+            }
+            .section4{
+               /* background-color: red;  */
+              
+                 height: 105vh;
+               
+             
+             }
+             .empieza{
+                 
+               /* 
+                background-color: paleturquoise; */
+                 height: 50vh;
+                 
+             }
+             .empieza h3{
+                 font-size: 2.3rem;
+                 text-align: center;
+                 margin: auto;
+              /*   background-color: pink; */
+                 width: 55vw;
+             }
+             .empieza p{
+                text-align: center;
+             /*   background-color: white; */
+                width: 60vw;
+                margin: auto;
+             }
+             .empieza button{
+                 margin: auto;
+                 width: 30vw;
+                 height: 10vh;
+             }
+             .section5{
+              
+                height: 115vh;
+                margin: auto;
+                width: 100vw;
+             /* background-color: burlywood;       */
+                
+            }
+            .section5 h3{
+           /*     background-color: red;  */
+                width: 80vw;
+                margin-left: 15vw;
+                margin-bottom: 20px;
+            }
+            .section5 p{
+            /*    background-color: #0d6efd;  */
+                margin-bottom: 20px;
+                margin-left: 15vw;
+                width: 70vw;
+            }
+            .section5 img{
+                position: absolute;
+               height: 85vh;
+                object-fit: cover;
+                width: 96vw;
+                 margin-left: 2vw;
+                margin-bottom: 40px;
+            }  
+            .section6{
+                /* background-color: cornflowerblue;   */
+                  width: 90vw;
+                  margin-left: 5vw;
+                  height: 70vh;
+                  text-align: center;
+                  padding-top: 2rem;
+              }
+              .fila h2
+             {
+               /* background-color: aqua;   */
+                width: 40vw;
+                font-size: 1.2em;
+                margin-left: 2rem;
+                vertical-align: auto;
+                text-align: left;
+              
+                left: 0;
+              }
+              .fila p
+              {
+                /* background-color: yellow; */
+                 width: 75vw;
+                 font-size: .9em;
+                 margin-left: 2rem;
+                 text-align: justify;
+                 
+               }
+               .section7{
+                width: 90vw;
+                margin-left: 5vw;
+                height: 200vh;
+                text-align: center;
+    /*            background-color: white;     */
+            
+            }   
+            .section7 h2{
+  /*              background-color: azure;   */
+                width: 80vw;
+                margin: auto;
+                font-size: 2.4rem;
+                padding-top: 1em;
+                padding-bottom: 1em;
+            }
+            .tarj  {
+  /*              background-color: orange;   */
+                padding-bottom: 2rem;
+                width: 50vw;
+                margin: auto;
+                
+            }
+            .sectionazul > *{
+                display: inline-block;
+                padding-top: 5vh;
+                text-align: center;
+            }
+            .sectionazul{
+                height: 30vh;
+                text-align: center;
+                width: 100vw;
+                margin: auto;
+                padding-top: 30px;
+            }
+            .section8{
+  /*             background-color: darkorchid;    */
+                   padding-top: 3rem;
+                   width: 90vw;
+                   margin-left: 5vw;
+                   height: 70vh;
+                   text-align: center;
+               }
+               .section8 h2{
+                 /*  background-color: white; */
+                   font-size: 2.3rem;
+                   text-align: left;
+                   width: 80vw;
+               }
+               .section8 p{
+                text-align: left;
+               }
+               .mt-4{
+                   display: flex;
+                   justify-content: space-around;
+               } 
+               .sectionmarino{
+ /*               background-color: midnightblue;    */
+              
+               
+                height: 50vh;
+            
+            }
+            .sectionmarinotext{
+                margin:auto;
+                margin-top: 8vh;
+ /*               background-color: orange;   */
+                width: 50vw;
+                line-height: 5vh;
+                text-align: center;
+               
+            } 
+            .sectionmarino button{
+                width: 30vw;
+                height: 8vh;
+                margin-bottom: 2rem;
+            } 
+            .sectionfooter{
+                /*  background-color: crimson;  */
+                 width: 100vw;
+                 height: 100vh;
+             }
+            
+           
+    
+           
+           
+
+ }
+
+// Small devices (landscape phones, less than 768px)
+@media (min-width: 767.98px) { 
+   /* body{
+        background-color: orange;
+    }
+    */
+    
+    .section1{
+       
+                        height: 120vh;
+                        width: 100vw;
+                        margin: auto;
+                      
+                    }
+                    .cta-text{
+                        margin-left: 1rem;
+                    }
+                   
+                    #wallet img{
+                        position: relative;
+                        width: 100vw;
+                    }
+                    
+                    .text-primary{
+                        font-weight: bold;
+                    }
+                    .home-title{
+                     
+                     /*     
+                          background-color: orange; */
+                        font-size: 3rem;
+                        width: 60vw;
+                        margin-left: .3em;
+                    }
+                    .home-description{
+                        font-size: bold;
+                        font-size: 2em;
+                        width: 60vw;
+                        margin-left: .5em;
+                        /*background-color: blue;*/
+                    }
+                    .home-form > *{
+                        vertical-align: bottom;
+                        margin-left: 5vw;
+                        display: inline-block;
+                        
+                    }
+                    .form-control{
+                        width:30vw;
+                        height: 10vh;
+                        margin-top: 5vh;
+                        position: relative;
+                        margin-left: 40px;
+                    }
+                    .btn{
+                        width: 15vw;
+                        height: 10vh;
+                        margin-top: 5vh;
+                        
+                    }
+                    .table{
+                        width: 100vw;
+                        height: 50vh;
+                      
+                       
+                      
+                    }
+                    .th{
+                      /*  background-color: #0d6efd;  */
+                        width: 80px;
+                        height: 30px;
+                    }
+                    thead{
+                      /*  background-color: #0d6efd;  */
+                        display: flex;
+                        
+                       
+                    }
+                    .trth > *{
+                        width: 60%;
+                       margin-left: 20%;
+                      
+                        
+                        
+                    }
+                    .nomCrypto > *{
+                     
+                       text-align: left;
+                       position: relative;
+                    }
+                    .textCrypto{
+                        display: block;
+                        position: relative;
+                        margin-left: 10em;
+                        height: 2em;
+                   /*     background-color: brown; */
+                    }
+                    .textCryptoSecondary{
+                        position: absolute;
+                        margin-left: 15em;
+                       
+                      /*  background-color: aquamarine; */
+                    }
+                    .cryptoIcon{
+                        height: 30px;
+                        position: absolute;
+                        margin-left: 10em;
+                       
+                       
+                    }
+                    .precioActual{
+                        position: absolute;
+                        margin-left: 15em;
+                    }
+                    .porcentajeActual{
+                        position: absolute;
+                        right: 25em;
+                        transform: translateY(0px);
+                        
+                     
+                        
+                    }
+                    .comprar{
+                        position: absolute;
+                        right: 4.5vw;
+                        height: 2.5em;
+                        width: 5.9em;
+                        
+                    }
+                    .graf{
+                        position: absolute;
+                        right: 14em;
+                    }
+                    .section4{
+                /*  background-color: red;  */
+                         width: 100vw;
+                         height: 60vh;
+                         margin: 0;
+                         position: relative;
+                         padding-top: 3rem;
+                     
+                     }
+                     .empiece{
+                        height: 50vh;
+                     /*   background-color: bisque; */
+                        position: absolute;
+                        width: 40vw;
+                        left: 0vw;
+                        top: 0
+
+                     }
+                     .grafsection4{
+                      /*  background-color: white; */
+                        position: absolute;
+                        right: 0;
+                        width: 55vw;
+                        height: 50vh;
+                     }
+                     .empieza h3{
+                         font-size: 1.6rem;
+                     }
+                     .grafcryptoname{
+                        position: absolute;
+                        left: 50px;
+                      /*  background-color: pink;  */
+                    
+                     }
+                     .cryptoIcon{
+                        position: absolute;
+                        left: 0;
+                     }
+                     .precioActual{
+                        position: absolute;
+                        right: 0;
+                        margin-right: 5vw;
+                       /* background-color: blue; */
+                     }
+                     .section5{
+              
+                        height: 150vh;
+                        margin: auto;
+                        width: 100vw;
+                    /* background-color: burlywood;  */     
+                        
+                    }
+                    .section5 h3{
+                   /*     background-color: red;  */
+                      
+                        font-size: 2.2rem;
+                    }
+                    .section5 p{
+                    /*    background-color: #0d6efd;  */
+                        margin-bottom: 30px;
+                    }
+                    .section5 img{
+                        
+                       height: 110vh;
+                       
+                        width: 96vw;
+                        margin-left: 2vw;
+                   
+                       
+                    } 
+                       .section7{
+                      
+                        background-color: white;     
+                    
+                    }   
+                    .img-tarj{
+                        padding-bottom: 2em;
+                    }
+                    .sectionazul > *{
+                    
+                        padding-right: 2em;
+                    }
+                       .section8 h2{
+                           margin-left: 5vw;
+                           text-align: center;
+                       }
+                       .section8 p{
+                        text-align: center;
+                       }
+                       .mt-4{
+                           display: flex;
+                           justify-content: space-around;
+                       } 
+                       .sectionmarino{
+                      background-color: ghostwhite;    
+                      
+                       
+                        height: 95vh;
+                        background-image: url('./imagenes/espacio.webp');
+                      
+                        background-size: contain;
+                     
+                       background-repeat: no-repeat;
+                     
+                    
+                    }
+                    .sectionmarinotext{
+                        margin:auto;
+                        margin-top: 52.5vh;
+         /*               background-color: orange;   */
+                        width: 50vw;
+                        line-height: 5vh;
+                        text-align: left;
+                        margin-left: 1em;
+                        color: black;
+                        
+                       
+                    } 
+                   
+                    .sectionmarino button{
+                        width: 30vw;
+                        height: 8vh;
+                        margin-bottom: 2rem;
+                    } 
+                    .sectionfooter{
+                      /*   background-color: crimson;  */
+                         width: 100vw;
+                       
+                         height: 70vh;
+                     }            
+                   
+            
+                   
+
+                    
+                       
+ }
+
+// Medium devices (tablets, less than 992px)
+@media (min-width: 991.98px) { 
+  /* body{
+        background-color: greenyellow;
+    }
+ 
+    .section1{
+        background-color: crimson;   
+    }
+      */
+    .logoImage{
+        width: 100px;
+        line-height: 5em;
+        height: 1.5em;
+        margin-top: .5em;
+    }
+    #toggle{
+        display: none;
+    }
+    #nav{
+       background-color: #fff;
+        width: 37rem;
+        height: 5em;
+        line-height: 5em;
+        padding-top: 0;
+        display: flex;
+        color: black; 
+
+         ul li{
+            list-style-type: none;
+            display: inline-block;
+           
+        }
+
+
+
+        ul li a{
+            text-decoration: none;
+            color: black;
+            font-size: 1em;
+            cursor: pointer;
+            padding-right: .5em;
+            font-weight: bold;
+    
+            &:hover{
+                color: gray;
+               
+
+                
+            }
+         
+        }
+       
+      
+    }
+   
+    
+    .getstarted{
+        border-style: none;
+        margin-left: 11.5em;
+        margin-top: .5em;
+        
+    }
+    .section5{
+       
+        height: 155vh;
+        margin: auto;
+        width: 100vw;
+/*      background-color: burlywood;  */      
+        
+    }
+    .section5 h3{
+  /*     background-color: red;  */
+        width: 80vw;
+        margin-left: 15vw;
+        margin-bottom: 20px;
+    }
+    .section5 p{
+    /*    background-color: #0d6efd;  */
+        margin-bottom: 20px;
+        margin-left: 15vw;
+        width: 70vw;
+    }
+    .section5 img{
+     
+       height: 135vh;
+    
+        width: 96vw;
+         margin-left: 2vw;
+        margin-bottom: 40px;
+     
+    } 
+    
+   .section7{
+ /*   background-color: red;   */
+    height: 115vh;
+
+   
+    }
+    .tarj-box{
+        display: flex;
+        padding-top: 0;
+    /*    background-color: orange;    */
+        width: 90vw;
+        height: 80vh;
+        position: relative;
+       margin-left: 0px;
+
+       .tarj{
+        /*   background-color: #0d6efd;   */
+           width: 30%;
+           vertical-align: top;
+          
+       }
+
+
+   }
+    
+    
+    .sectionazul{
+     /*   text-align: center; */
+
+        .sectionazulText{
+            padding-right: 7em;
+        }
+        
+    }
+ 
+}
+
+// Large devices (desktops, less than 1200px)
+@media (min-width: 1199.98px) {   
+  /*  body{
+    background-color: blue; 
+  } 
+  */
+  .section1{
+ /*      background-color: crimson;    */
+       height: 130vh;
+        width: 100vw;
+        margin-left: 0vw;
+
+        .home-cta{
+     /*       background-color: aquamarine;   */
+         
+           .icon-btc
+           {
+            margin-left: 10%;
+           }
+            .home-title,
+            .home-description{
+    /*            background-color: pink;   */
+                width: 60%;
+                margin-left: 10%;
+            }
+            
+        }
+    }
+    .section5{
+     /*  background-color: aquamarine;   */
+        width: 50%;
+        position: absolute;
+        right: 0;
+        margin-right: 0;
+        height: 160vh;
+        padding-bottom: 0;
+        margin-bottom: 0;
+
+        img{
+            transform: translatex(-8rem);
+            width: fit-content;
+            height: 100vh;
+            margin-right: 5rem;
+            z-index: -99;
+            opacity: .9;
+           }
+         h3,
+         p{
+    /*     background-color: crimson;  */   
+            width: 30vw;
+           margin-top: 0;
+           margin-left: 0;
+         }
+      
+    }
+    
+    .section6{
+       /* background-color: pink;   */
+        left: 0;
+       margin-left: 0;
+        width: 0%;
+        height: 160vh;
+        text-align: center;
+
+        h2,
+        p{
+          /*background-color: crimson;   */
+           width: 30vw;
+      
+        }
+
+        
+    }
+    .fila{
+        padding-top: 5rem;
+        margin-left: 3rem;
+      
+      /*   background-color: #fff; */
+        
+     
+    }
+    .sectionazul > *{
+      /* background-color: olive; */
+       margin-right: 6rem;
+    }
+   
+ 
+
+}

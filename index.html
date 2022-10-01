@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- metas para el Seo -->
+    <meta name="title" content="richoffpain">
+    <meta name="keywords" content="crypto">
+    <meta name="description" content="Lanzate en las criptomonedas">
+    <meta name="language" content="Spanish">
+    <title>Coinbase LandingPage</title>
+    <link rel="shortcut icon" href="./imagenes/favicon.png" type="image/x-icon">
+    <!-- Repositorios Bootstrap 5.2, Font-awesome y css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header id="container">
+        <div class="logo">
+            <a href="index.html">
+                <img src="./imagenes/logo.png" class='logoImage' alt="logo coinbase">
+            </a>
+        </div>
+        <div class="botones">
+            <button type="submit" class="signin">Sign in</button>
+            <button type="submit" class="getstarted btn-primary bg-primary text-light ">Get Started</button>
+        </div>
+        <div id="toggle"></div>
+    <nav id="nav">
+            <ul>
+                <li><a href="#">Precios </a></li>
+                <li><a href="#">Recursos</a></li>
+                <li><a href="#">Personas</a></li>
+                <li><a href="#">Negocios</a></li>
+                <li><a href="#">Desarrolladores </a></l>
+                <li><a href="#">Acerca de</a></li>
+            </ul>
+    </nav>
+</header>
+
+
+    <section class="section1 d-md-flex justify-content-between">
+        <div class="home-cta">
+            <div class="cta-text">
+                <img class="icon-btc" src="./imagenes/Bitcoin.svg" alt="">
+                <span class='text-primary'>Impulse su cartera</span>
+                <i class="bi bi-arrow-right text-primary"></i>
+            </div>
+            <h2 class="home-title h1 d-sm-none">Impulse su cartera de criptomonedas</h2>
+            <h2 class="home-title h1 d-none d-sm-block">Empieza a crear tu cartera de criptomonedas</h2>
+            <p class="home-description">Coinbase es el lugar más sencillo para comprar y vender criptomonedas.
+                Regístrate para comenzar hoy.</p>
+            <div class="home-form row align-items-center d-block d-md-inline-block">
+                <input type="text" class="form-control col-10 row-cols-md-5 " placeholder="Direccion de correo electronico">
+                <button type="submit" class="btn btn-primary">Empezar</button>
+            </div>
+        </div>
+        <div id="wallet d-none d-md-flex ">
+            <img class="home-img d-none d-md-block " src="./imagenes/wallet.png" alt="wallet">
+        </div>
+
+    </section>
+ 
+  <section class="section2">
+        <div>
+            <div class="title">All you need to know about The Ethereum Merge</div>
+            <div class="btn-eter">
+                <span>Lee más ..</span>
+                <i class="bi bi-arrow-right "></i>
+            </div>
+        </div>
+        <div class="sec-eter-s">
+            <img class="icon-eter  d-none d-md-block" src="./imagenes/ethblack.webp" alt="Ethereum">
+        </div>
+    </section>
+
+    <section class="section3 d-flex d-md-none ">
+        <table class="table  border table-responsive table-md-bordered">
+            <thead>
+                <tr class="d-none d-md-flex trth">
+                    <th scope="col" class="th">#</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Precio</th>
+                    <th scope="col">Cambio</th>
+                    <th scope="col">Gráfico</th>
+                    <th scope="col">Operar</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="tableth   d-md-flex">
+                    <th scope="row" class="px-4 d-none d-md-block ">1</th>
+                    <td class="nomCrypto d-md-flex">
+                      <img src="./imagenes/btc.png" alt="btc" class="cryptoIcon d-flex "> 
+                      <span class="d-block  textCrypto ">Bitcoin</span> 
+                        <span class="text-secondary d-block d-md-inline textCrypto textCryptoSecondary">BTC</span> 
+                    </td>
+             
+                    <td class="precioActual d-md-flex ">2.571.018.31 ARS</td>
+                    <td class="d-block d-md-flex porcentajeActual ">-2.89 %</td>
+                    <td class="d-md-flex "><img src="./imagenes/mini-graf-btc.png" alt="mini-graf-btc" class="graf d-none d-md-flex"></td>
+                    <td>
+                        <div class="comprar btn d-none d-md-flex bg-success text-light">Comprar</div>
+                    </td>
+                    
+                </tr>
+                <tr class="tableth align-middle d-md-flex">
+                    <th scope="row" class="px-4 d-none d-md-block">2</th>
+                    <td class="nomCrypto d-md-flex"><img src="./imagenes/eth.png" alt="Ethereum" class="cryptoIcon">
+                        <span class="textCrypto ">Ethereum</span>
+                        <span class="text-secondary  textCrypto textCryptoSecondary">ETH</span>
+                    </td>
+                    <td class="precioActual">864.564.99 ARS</td>
+                    <td class="porcentajeActual">-8.20 %</td>
+                    <td class="d-md-flex"><img src="./imagenes/mini-graf-btc.png" alt="mini-graf-btc" class="graf d-none d-md-flex"></td>
+                    <td>
+                        <div class=" comprar btn d-none d-md-flex bg-success text-light">Comprar</div>
+                    </td>
+                </tr>
+                <tr class="tableth align-middle d-md-flex">
+                    <th scope="row" class="px-4 d-none d-md-block ">3</th>
+                    <td class="nomCrypto d-md-flex"><img src="./imagenes/cadano.png" alt="Cardano" class="cryptoIcon ">
+                        <span class="textCrypto">Cardano</span>
+                        <span class="text-secondary textCrypto textCryptoSecondary">ADA</span>
+                    </td>
+                    <td class="precioActual">288.38 ARS</td>
+                    <td class="porcentajeActual">-8.38 %</td>
+                    <td class="d-md-flex"><img src="./imagenes/mini-graf-btc.png" alt="mini-graf-btc" class="graf d-none d-md-flex"></td>
+                    <td>
+                        <div class="comprar btn d-none d-md-flex bg-success text-light">Comprar</div>
+                    </td>
+                    </td>
+                </tr>
+                <tr class="tableth align-middle d-md-flex">
+                    <th scope="row" class="px-4 d-none d-md-block">4</th>
+                    <td class="nomCrypto d-md-flex"><img src="./imagenes/sola.png" alt="Solana" class="cryptoIcon d-md-block">
+                        <span class="textCrypto">Solana</span>
+                        <span class="text-secondary textCrypto textCryptoSecondary">SOL</span>
+                    </td>
+                    <td class="precioActual  order-md-0">20.144.79 ARS</td>
+                    <td class="porcentajeActual  order-md-1">-7.31 %</td>
+                    <td class="d-md-flex"><img src="./imagenes/mini-graf-btc.png" alt="mini-graf-btc" class="graf d-none d-md-flex"></td>
+                    <td>
+                        <div class=" comprar btn d-none d-md-flex bg-success text-light">Comprar</div>
+                    </td>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+
+    </section>
+    <!-- flex-column w-50 me-2 align-items-center -->
+    <section class="section4">
+        <div class="d-block d-md-flex justify-content-between">
+            <div class="d-flex empieza empiece flex-wrap">
+                <h3>Gane hasta 16 US$ <span class="d-none d-sm-block">gratis</span> en criptomoneda</h3>
+                <p class="d-block d-sm-none">Descubra cómo funcionan las criptomonedas especificas y gane un poco de ellas para probar por su cuenta.</p>
+                <p class="d-none d-sm-block">Conoce cómo funcionan las distintas criptomonedas y pruébalas.</p>
+                <button type='submit' class="btn btn-primary">Comience a ganar</button>
+            </div>
+            <div class=" grafsection4 d-flex flex-column justify-content-center">
+                <div class="col d-flex justify-content-between ">
+                    <img src="./imagenes/sola.png" alt="Solana" class="cryptoIcon d-sm-block" style="height:30px ;">
+                    <span class="grafcryptoname">Solana</span>
+                    <span class="text-secondary d-none">SOL</span>
+                    <span class="precioActual">Gana 4US$ SOL</span>
+                </div>
+                <div class="col d-flex justify-content-between">
+                    <img src="./imagenes/cadano.png" alt="Cardano" class="cryptoIcon d-sm-block" style="height:30px ;">
+                        <span class="grafcryptoname">Cardano</span>
+                        <span class="text-secondary d-none">ADA</span>
+                        <span class="precioActual">Gana 3US$ ADA</span>
+                </div>
+
+                <div class="col d-flex justify-content-between">
+                    <img src="./imagenes/eth.png" alt="Ethereum" class="cryptoIcon  d-sm-block" style="height:30px ;">
+                        <span class="grafcryptoname">Ethereum</span>
+                        <span class="text-secondary d-none">ETH</span>
+                        <span class="precioActual">Gana 4US$ ETH</span>
+                </div>
+
+                <div class="col d-flex justify-content-between ">
+                    <img src="./imagenes/btc.png" alt="btc" class="cryptoIcon d-sm-block" style="height:30px;">
+                    <span class="grafcryptoname">Bitcoin</span>
+                    <span class="text-secondary d-none">BTC</span>
+                    <span class=" precioActual">Gana 3US$ BTC</span>
+            </div>
+
+            </div>
+        </div>
+        </section>
+        
+        <section class="section5 empieza">
+            <h3>Crear  la cartera de criptomonedas hoy mismo</h3>
+            <p>Coinbase tiene una gran variedad de funciones. ¡Somos el mejor lugar para comenzar a operar!</p>
+            <img class="statdesktop d-none d-sm-block" src="./imagenes/statdesktop.webp" alt="">
+        </section>
+         
+        <section class="section6">
+            <div class="fila d-block d-sm-flex">
+                <div class="icon-fetu"><svg width="30" height="32" viewBox="0 0 30 32" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path fill="#D4EEFF" d="M10 32h10V10H10z"></path><path fill="#1752F0" d="M20 32h10V0H20z"></path><path fill="#55B4FC" d="M0 32h10V19H0z"></path></g></svg></div>
+                <div>
+                    <h2>Gestiona tu cartera</h2>
+                    <p class="text-secondary">Compra y vende las monedas digitales más populares y realiza su seguimiento desde el mismo lugar.</p>
+                </div>
+
+            </div>
+            <div class="fila d-block d-sm-flex">
+                <div class="icon-fetu">
+                    <svg width="36" height="38" viewBox="0 0 36 38" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M17.813 9.5a2.375 2.375 0 002.375-2.375v-4.75a2.375 2.375 0 00-4.75 0v4.75A2.375 2.375 0 0017.811 9.5M29.688 9.5a2.375 2.375 0 002.375-2.375v-4.75a2.375 2.375 0 00-4.75 0v4.75A2.375 2.375 0 0029.688 9.5" fill="#D4EEFF"></path><path fill="#D4EEFF" d="M0 38h35.625V4.75H0z"></path><path fill="#55B4FC" d="M0 11.875h35.625V4.75H0z"></path><path d="M5.938 9.5a2.375 2.375 0 002.375-2.375v-4.75a2.375 2.375 0 00-4.75 0v4.75A2.375 2.375 0 005.937 9.5" fill="#D4EEFF"></path><path d="M27.313 4.75v2.375a2.375 2.375 0 004.75 0V4.75h-4.75zM5.938 9.5a2.375 2.375 0 002.375-2.375V4.75h-4.75v2.375A2.375 2.375 0 005.937 9.5" fill="#1752F0"></path><path d="M17.813 9.5a2.375 2.375 0 002.375-2.375v-4.75a2.375 2.375 0 00-4.75 0v4.75A2.375 2.375 0 0017.811 9.5" fill="#D4EEFF"></path><path d="M17.813 9.5a2.375 2.375 0 002.375-2.375V4.75h-4.75v2.375A2.375 2.375 0 0017.811 9.5" fill="#1752F0"></path><path fill="#FFF" d="M4.75 34.438h26.125V11.875H4.75z"></path><path fill="#1752F0" d="M12.69 26.329l3.359 3.359L26.125 19.61l-3.358-3.359z"></path><path fill="#1752F0" d="M16.049 29.688l3.359-3.36-6.244-6.243-3.359 3.36z"></path></g></svg>
+                </div>
+                <div>
+                    <h2>Compras periódicas</h2>
+                    <p class="text-secondary">Invierte poco a poco en criptomonedas programando compras diarias, semanales y mensuales.</p>
+                </div>
+
+            </div>
+            <div class="fila d-block d-sm-flex">
+                <div class="icon-fetu">
+                    <svg width="30" height="33" viewBox="0 0 30 33" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15 0C9.106 0 4.284 4.64 4.284 11.344V25.78h21.429V11.344C25.714 4.64 20.892 0 14.999 0z" fill="#D4EEFF"></path><path d="M30 12.375H0V33h30V12.375z" fill="#56B4FC"></path><path d="M25.714 12.375H4.285v16.5h21.429v-16.5z" fill="#1652F0"></path><path d="M15 18.563l2.84 6.187h-5.68L15 18.562z" fill="#fff"></path><path d="M15 20.625c1.184 0 2.143-.923 2.143-2.063 0-1.139-.96-2.062-2.143-2.062-1.183 0-2.143.923-2.143 2.063 0 1.139.96 2.062 2.143 2.062z" fill="#fff"></path></svg>
+                </div>
+                <div>
+                    <h2>Protección de la caja fuerte</h2>
+                    <p  class="text-secondary">Para una mayor seguridad, guarde sus fondos en una caja fuerte con retiradas retrasadas en el tiempo.</p>
+                </div>
+            </div>
+            <div class="fila d-block d-sm-flex">
+                <div class="icon-fetu">
+                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M36 2.25H0v31.5h36V2.25z" fill="#D4EEFF"></path><path d="M28.125 36H7.875a1.128 1.128 0 01-1.125-1.125V1.125C6.75.506 7.256 0 7.875 0h20.25c.618 0 1.125.506 1.125 1.125v33.75c0 .619-.507 1.125-1.125 1.125z" fill="#56B4FC"></path><path d="M29.25 2.25H6.75v31.5h22.5V2.25z" fill="#1652F0"></path><path d="M23 15.137L21.889 14l-6.667 6.822 1.11 1.137L23 15.137z" fill="#fff"></path><path d="M16.334 22l1.11-1.137-3.333-3.411-1.11 1.137L16.333 22z" fill="#fff"></path><path d="M23.625 3.375h-11.25a1.128 1.128 0 01-1.124-1.125V1.125h13.5V2.25c0 .619-.507 1.125-1.126 1.125z" fill="#56B4FC"></path><path d="M15.75 32.063c0 .337.226.562.563.562h3.375c.338 0 .563-.225.563-.562 0-.338-.226-.563-.563-.563h-3.375c-.337 0-.562.225-.562.563z" fill="#fff"></path></svg>
+                </div>
+                <div>
+                    <h2>Aplicaciones móviles</h2>
+                    <p class="text-secondary">Mantente al día de los mercados con la aplicación de Coinbase para Android o iOS.</p>
+                </div>
+
+            </div>
+
+        </section>
+       
+        <section class="section7">
+            <h2>La plataforma de criptomonedas más fiable</h2>
+            <p class="text-secondary">¿Por qué escoger Coinbase?</p>
+            <div class="tarj-box">
+                <div class="tarj">
+                    <div class="img-tarj">
+                        <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M56 0H8v50h48V0z" fill="#BFE9FF"></path><path d="M64 10H0v48h64V10z" fill="#56B4FC"></path><path d="M56 10H8v40h48V10z" fill="#1652F0"></path><path d="M10 16H6v8h4v-8zM10 36H6v8h4v-8z" fill="#1652F0"></path><path d="M64 58h-8v6h8v-6zM8 58H0v6h8v-6z" fill="#56B4FC"></path><path d="M41.19 20.81c-5.07-5.07-13.32-5.07-18.38 0-5.06 5.07-5.07 13.32 0 18.38 2.53 2.53 5.86 3.8 9.19 3.8 3.33 0 6.66-1.27 9.19-3.8 5.07-5.07 5.07-13.31 0-18.38zM32 19c2.5 0 5 .85 7.04 2.55l-2.85 2.85A6.99 6.99 0 0032 23c-1.53 0-2.98.5-4.19 1.4l-2.85-2.85A11.03 11.03 0 0132 19zm3.54 14.54c-.95.94-2.2 1.46-3.54 1.46-1.34 0-2.59-.52-3.54-1.46A4.952 4.952 0 0127 30c0-1.33.52-2.59 1.46-3.54.94-.95 2.2-1.46 3.54-1.46 1.34 0 2.59.52 3.54 1.46.95.94 1.46 2.21 1.46 3.54s-.52 2.59-1.46 3.54zM23.55 22.96l2.85 2.85A6.99 6.99 0 0025 30c0 1.53.5 2.98 1.4 4.19l-2.85 2.85a11.018 11.018 0 010-14.08zm1.41 15.49l2.85-2.85a6.969 6.969 0 008.38 0l2.85 2.85a11.018 11.018 0 01-14.08 0zm15.49-1.41l-2.85-2.85c.9-1.2 1.4-2.65 1.4-4.19 0-1.53-.5-2.98-1.4-4.19l2.85-2.85a11.018 11.018 0 010 14.08z" fill="#fff"></path></svg>
+                    </div>
+                    <h3>Almacenamiento seguro</h3>
+                    <p class="text-secondary">La gran mayoría de activos digitales se guardan en un almacenamiento seguro offline.</p>
+                    <p class="text-primary">Entérate de cómo Coinbase mantiene tus fondos seguros y protegidos </p>
+                </div>
+                <div class="tarj">
+                    <div class="img-tarj">
+                        <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M56 56h-8v8h8c4.42 0 8-3.58 8-8h-8z" fill="#BFE9FF"></path><path d="M48 56V0H0v56c0 4.42 3.58 8 8 8h48c-4.42 0-8-3.58-8-8z" fill="#56B4FC"></path><path d="M48 56H0c0 4.42 3.58 8 8 8h48c-4.42 0-8-3.58-8-8z" fill="#1652F0"></path><path d="M40 30H8v2h32v-2zM40 36H8v2h32v-2zM40 42H8v2h32v-2zM32 48H16v2h16v-2zM23.5 24.66l-3.24-5.92-5.92-3.24 5.92-3.24 3.24-5.92 3.24 5.92 5.92 3.24-5.92 3.24-3.24 5.92zm-4.99-9.16l3.22 1.76 1.76 3.22 1.76-3.22 3.22-1.76-3.22-1.76-1.76-3.22-1.76 3.22-3.22 1.76z" fill="#fff"></path></svg>
+                    </div>
+                    <h3>Seguro de protección</h3>
+                    <p class="text-secondary">Coinbase tiene un seguro de criptomonedas y todos los saldos en efectivo en USD están cubiertos por el seguro de la FDIC, hasta un máximo de 250.000 USD.</p>
+                    <p class="text-primary">Descubre todo sobre la póliza de seguros para la protección de tus criptomonedas </p>
+                </div>
+                <div class="tarj">
+                    <div class="img-tarj">
+                        <svg width="56" height="64" viewBox="0 0 56 64" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M56 0H24v64h32V0z" fill="#BFE9FF"></path><path d="M0 8v28c0 13.25 24 24 24 24s24-10.75 24-24V8H0z" fill="#56B4FC"></path><path d="M24 8v52s24-10.75 24-24V8H24z" fill="#1652F0"></path><path d="M7 15v21c0 4.92 8.57 11.72 16.53 15.97l.47.25.47-.25C32.43 47.72 41 40.92 41 36V15H7zm32 2v6H9v-6h30zM24 49.95C15.55 45.35 9 39.28 9 36V25h30v11c0 3.28-6.55 9.35-15 13.95z" fill="#fff"></path></svg>
+                    </div>
+                    <h3>Buenas prácticas de la industria</h3>
+                    <p class="text-secondary">Coinbase admite una gran variedad de las monedas digitales más populares.</p>
+                    <p class="text-primary ">Te contamos cómo implementamos las mejores prácticas del sector para la seguridad de la cuenta </p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="sectionazul container-fluid text-white bg-primary " >
+            <div class="col text-center sectionazulText">
+                <h2 class="fw-bold ">217 mil MUS$</h2>
+                <p class="text-light">Volumen trimestral negociado 100+ </p>
+            </div>
+            <div class="col text-center sectionazulText">
+                <h2 class="fw-bold ">100+</h2>
+                <p class="text-light">Países admitidos </p>
+            </div>
+            <div class="col text-center sectionazulText">
+                <h2 class="fw-bold ">103 M+</h2>
+                <p class="text-light">Usuarios verificados</p>
+            </div>
+        </section>
+        
+        <section class="section8">
+            <h2 class="display-5 fw-bold">Empieza en tan solo un minuto</h2>
+            <p class="text-secondary mt-3">Coinbase admite una gran variedad de las monedas digitales más populares.</p>
+        <div class="row mt-4">
+            <div class="col text-center">
+                <div class="mt-4"><svg width="64" height="60" viewBox="0 0 64 60" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M32 16a8 8 0 100-16 8 8 0 000 16zM32 20c-11.05 0-20 7.16-20 16v18h40V36c0-8.84-8.95-16-20-16z" fill="#56B4FC"></path><path d="M64 36H0v24h64V36z" fill="#BFE9FF"></path><path d="M52 36H12v24h40V36z" fill="#1652F0"></path><path d="M33 42h-2v12h2V42z" fill="#fff"></path><path d="M38 49v-2H26v2h12z" fill="#fff"></path></svg></div>
+                <p class="mt-4">Crea una cuenta</p>
+            </div>
+            <div class="col text-center">
+                <div class="mt-4"><svg width="65" height="56" viewBox="0 0 65 56" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M57.03 20h-50v24h50V20z" fill="#BFE9FF"></path><path d="M60.03 52v-4h-8V16.06L64 16.1l.01-4.1L32.06 0 .01 12 0 15.9l12.03.04V48h-8v4h-4v4h64v-4h-4zm-16-4h-8V16.01l8 .03V48zm-24-32.04l8 .03V48h-8V15.96z" fill="#56B4FC"></path><path d="M52.03 20h-40v24h40V20z" fill="#1652F0"></path><path d="M36.41 34.38c0-2.34-1.42-3.12-4.17-3.5-2.03-.29-2.42-.77-2.42-1.72 0-.9.69-1.54 2.01-1.54 1.34 0 2.04.52 2.26 1.75h1.99c-.19-1.86-1.26-2.96-3.06-3.28V24h-2v2.05c-1.98.28-3.26 1.6-3.26 3.29 0 2.19 1.32 3.04 4.12 3.42 1.9.31 2.44.72 2.44 1.8s-.92 1.8-2.21 1.8c-1.98 0-2.45-.98-2.6-2.16h-2.09c.14 1.94 1.2 3.4 3.61 3.72V40h2v-2.08c2.06-.33 3.38-1.77 3.38-3.54z" fill="#fff"></path></svg>
+                </div>
+                <p class="mt-4">Vincula tu cuenta bancaria</p>
+            </div>
+            <div class="col text-center">
+                <div class="mt-4"><svg width="61" height="56" viewBox="0 0 61 56" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M40 40.5v-.99c0-.89-.59-1.68-1.45-1.92l-9.21-2.63a7.975 7.975 0 00-6.31.83L16 40v12h15.65c2.88 0 5.73-.52 8.43-1.53L60 43c.9-2.26-.93-4.67-3.35-4.39L40 40.5z" fill="#56B4FC"></path><path d="M16 36H0v20h16V36z" fill="#BFE9FF"></path><path d="M16 40H0v12h16V40z" fill="#1652F0"></path><path d="M28 20c5.523 0 10-4.477 10-10S33.523 0 28 0 18 4.477 18 10s4.477 10 10 10z" fill="#56B4FC"></path><path d="M48 36c5.523 0 10-4.477 10-10s-4.477-10-10-10-10 4.477-10 10 4.477 10 10 10z" fill="#1652F0"></path><path d="M32 9h-3V6h-2v3h-3v2h3v3h2v-3h3V9zM52 27v-2h-8v2h8z" fill="#fff"></path></svg>
+                </div>
+                <p class="mt-4">Comienza a comprar y vender</p>
+            </div>
+        </div>
+        </section>
+
+        <section class="sectionmarino  text-white">
+            <div class="row align-items-center">
+                <div class="sectionmarinotext">
+                    <h2>Gana hasta 16 US$ en criptomoneda</h2>
+                    <p class="d-block d-sm-none">Descubra cómo funcionan las  criptomonedas especificas y gane un poco de ellas para probar por su cuenta.</p>
+                    <p class="d-none d-sm-block">Conoce cómo funcionan las distintas criptomonedas y pruébalas.</p>
+                    <button type='submit' class=" btn btn-primary">Comience a ganar</button>
+                </div>
+                <div class="col d-none d-md-block">
+                    <img  class="espacioweb d-none" src="./imagenes/espacio.webp" alt="">
+                </div>
+            </div>
+        </section>
+        
+        <footer class="sectionfooter">
+            
+            <div class="container">
+                <section class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+                <div class="col mb-3">
+                <a href="/" class="d-flex align-items-start mb-3 link-dark text-decoration-none">
+                    <figure>
+                        <img src="./imagenes/2022-09-16 12_31_22-Clipboard.png" alt="" class="d-none">
+                    </figure>
+                 <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg> 
+                </a>
+                <p class="text-muted text-center d-none">© 2022</p>
+                </div>
+                <div class="col mb-1">
+                </div>
+                <div class="col mb-3">
+                <h5>Acerca de</h5>
+                <ul class="nav flex-nowrap  flex-column  align-items-start justify-content-start">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Acerca de</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Empleo</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Programa de afiliados</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Blog</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Gabinete de prensa</a></li>
+                </ul>
+                </div>
+                <div class="col mb-3">
+                <h5>Personas físicas</h5>
+                <ul class="nav flex-nowrap flex-column align-items-start justify-content-start">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Comprar y vender</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Gane criptomonedas gratis</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Wallet</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">NFT</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Tarjeta</a></li>
+                </ul>
+                </div>
+                <div class="col mb-3">
+                <h5>Servicio de asistencia</h5>
+                <ul class="nav flex-nowrap  flex-column  align-items-start justify-content-start">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Centro de ayuda</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Características</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Crear cuenta</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Verificación de la identidad</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Datos de la cuenta</a></li>
+                </ul>
+                </div>
+            </section>
+                </div>
+            </footer>
+
+ <!--
+ area de scripts de bootstrap, iconos, loader -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+            integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+            integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+            crossorigin="anonymous"></script>
+     
+        </body>
+        <script src="index.js"></script>
+</html>

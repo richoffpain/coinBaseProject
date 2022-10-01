@@ -1,0 +1,12 @@
+{
+  "name": "coinbaseproject",
+  "version": "1.0.0",
+  "description": "Cloning the landing page of Coin Base",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Claoudy Deisme",
+  "license": "ISC"
+}
